@@ -1,0 +1,58 @@
+/* #title {
+  color: red;
+}
+.sub-title {
+  color: green;
+}
+h3 {
+  color: blueviolet;
+} */
+
+/* * {
+  border: 2px solid black;
+} */
+
+/* .box h2 {
+  color: red;
+}
+.container h2 {
+  color: green;
+} */
+
+/* .nav > li > a {
+  color: red;
+} */
+
+/* h2.title {
+  color: green;
+}
+h3.title {
+  color: red;
+} */
+
+/* p ~ h2 {
+  color: red;
+} */
+
+/* p + h2 {
+  color: red;
+} */
+
+input:checked ~ span {
+  color: red;
+}
+
+span:hover {
+  color: red;
+}
+
+p::selection {
+  background: black;
+  color: yellow;
+}
+
+/*
+Tìm hiểu trước:
+- Attribute Selector
+- Pseudo Element, Pseudo class (state)
+*/
