@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!--Các trường-->
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name..." value="" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email..." value="" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password..."
+          value=""
+        />
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Age..." value="" />
+      </div>
+
+      <div>
+        <label for="avatar">Avatar</label>
+        <input type="file" id="avatar" multiple />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" />
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Message..."></textarea>
+      </div>
+
+      <div>
+        <label for="sothich">Sở thích</label>
+        <label>
+          <input type="checkbox" value="Sở thích 1" />
+          Sở thích 1
+        </label>
+        <label>
+          <input type="checkbox" value="Sở thích 2" />
+          Sở thích 2
+        </label>
+        <label>
+          <input type="checkbox" value="Sở thích 3" />
+          Sở thích 3
+        </label>
+      </div>
+
+      <div>
+        <label for="gender">Giới tính</label>
+        <label>
+          <input type="radio" name="gender" value="Không biết" />
+          Không biết
+        </label>
+        <label>
+          <input type="radio" name="gender" value="Nam" />
+          Nam
+        </label>
+        <label>
+          <input type="radio" name="gender" value="Nữ" />
+          Nữ
+        </label>
+      </div>
+
+      <div>
+        <label for="province">Tỉnh/thành phố</label>
+        <select id="province" multiple>
+          <option value="">Chọn Tỉnh/thành phố</option>
+          <option value="Hà Nội">Hà Nội</option>
+          <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+          <option value="Đà Nẵng">Đà Nẵng</option>
+        </select>
+      </div>
+
+      <!--Nút gửi-->
+      <button type="submit">Submit</button>
+      <button type="button">Back</button>
+      <!-- <button type="reset">Reset</button> -->
+    </form>
+  </body>
+</html>
