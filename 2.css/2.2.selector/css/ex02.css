@@ -1,0 +1,112 @@
+/* a[target="_blank"] {
+  color: red;
+} */
+
+/* a[href*="f8.edu.vn"] {
+  color: green;
+} */
+
+/* a[title~="f8" i] {
+  color: red;
+} */
+
+/* h1::before {
+  content: "A";
+}
+h1::after {
+  content: "B";
+} */
+/* ul {
+  list-style: none;
+}
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: red;
+  margin-right: 10px;
+  border-radius: 50%;
+} */
+
+/* p::first-letter {
+  color: green;
+}
+
+p::first-line {
+  color: red;
+}
+
+p::selection {
+  color: red;
+  background: yellow;
+}
+
+input::placeholder {
+  color: red;
+}
+input {
+  color: green;
+} */
+
+/* h1:hover {
+  color: red;
+}
+h1:active {
+  color: green;
+} */
+
+/* h1:focus {
+  color: red;
+}
+
+button:focus {
+  color: red;
+}
+
+input:focus {
+  background: yellow;
+}
+
+input:focus::placeholder {
+  color: red;
+} */
+/* 
+ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: green;
+} */
+
+/* ul :first-of-type {
+  color: red;
+}
+ul :last-of-type {
+  color: green;
+} */
+
+/* ul li:nth-of-type(2n + 1) {
+  color: red;
+} */
+
+/* ul li:nth-child(odd) {
+  color: red;
+} */
+
+/* button:disabled {
+  color: goldenrod;
+} */
+
+/* ul li:not(.active, .current) {
+  color: red;
+} */
+
+/* ul li:not(.active):not(.current) {
+  color: red;
+} */
+
+/* input:valid ~ span {
+  color: red;
+} */

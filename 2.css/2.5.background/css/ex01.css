@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 2000px;
+}
+.box {
+  height: 500px;
+  height: 600px;
+  /* background-color: burlywood;
+  background-image: url("https://fastly.picsum.photos/id/364/536/354.jpg?hmac=3O0ojRh7NNfYP6PiPhbnupymAgRh1IUj7FK5zAOtrws");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-attachment: fixed; */
+  background: fixed burlywood
+    url("https://fastly.picsum.photos/id/364/536/354.jpg?hmac=3O0ojRh7NNfYP6PiPhbnupymAgRh1IUj7FK5zAOtrws")
+    no-repeat 0 0 / 50%;
+}
