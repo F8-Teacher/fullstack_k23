@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  --column: 5;
+  --gap: 15px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.item {
+  background: green;
+  color: #fff;
+  width: calc(100% / var(--column) - var(--gap) + var(--gap) / var(--column));
+}

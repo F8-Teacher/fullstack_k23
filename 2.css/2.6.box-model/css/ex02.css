@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+.container -> width = 100% -> Theo width của body
+.container -> max-width = 1200px -> Bị chặn -> Dừng lại ở 1200px
+
+Body = 700px (< 1200px) -> width = 100% = 700px
+*/
