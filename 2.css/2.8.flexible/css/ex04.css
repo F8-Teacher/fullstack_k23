@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* main {
+  display: flex;
+}
+.sidebar {
+  width: 280px;
+  background: #ccc;
+  height: 100vh;
+}
+.content {
+  background: #ddd;
+  height: 100vh;
+  flex-grow: 1;
+} */
+
+.tabs {
+  background: green;
+  width: 80%;
+  margin: 30px auto;
+}
+.tabs ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+.tabs ul li {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.tabs a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  background: rgb(1, 68, 1);
+  border-radius: 10px;
+}
