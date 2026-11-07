@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel {
+  position: relative;
+}
+.carousel .carousel-nav span {
+  position: absolute;
+  top: calc(50% - 20px);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* translate: 0 -50%; */
+}
+.carousel .carousel-nav .prev {
+  left: 10px;
+}
+.carousel .carousel-nav .next {
+  right: 10px;
+}

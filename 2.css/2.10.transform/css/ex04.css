@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid red;
+  margin: 30px auto;
+}
+.box label {
+  display: block;
+  margin: 10px 0;
+}
+.box input {
+  display: none;
+}
+.box label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+}
+
+.box label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+}
+
+.box label::after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 5px;
+  border: solid green;
+  border-width: 0 0 2px 2px;
+  rotate: -45deg;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.box label:has(input:checked)::after {
+  display: block;
+}
+
+/* .box span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+.box span::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+}
+.box span::after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 5px;
+  border: solid green;
+  border-width: 0 0 2px 2px;
+  rotate: -45deg;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.box input:checked ~ span::after {
+  display: block;
+} */

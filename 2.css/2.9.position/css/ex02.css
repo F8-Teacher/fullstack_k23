@@ -9,11 +9,16 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 .box {
   width: 30%;
   margin: 30px auto;
   border: 1px solid #ddd;
+}
+
+.box .image {
+  position: relative;
 }
 
 .box .info {
@@ -25,4 +30,7 @@ img {
   border-radius: 3px;
   font-size: 0.8em;
   padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
