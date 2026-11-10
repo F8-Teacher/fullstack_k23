@@ -12,4 +12,22 @@
   background: green;
   color: #fff;
   border: 0;
+  position: relative;
+  overflow: hidden;
+}
+.btn span {
+  position: relative;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 100%;
+  background: red;
+  transition: right 0.3s;
+}
+.btn:hover::before {
+  right: 0;
 }
