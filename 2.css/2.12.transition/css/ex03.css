@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  border-radius: 99px;
+  background: green;
+  color: #fff;
+  border: 0;
+}
