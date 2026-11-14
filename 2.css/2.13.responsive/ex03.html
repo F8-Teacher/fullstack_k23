@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/ex03.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="container">
+          <div class="navigation-row">
+            <div class="toggle-bar">
+              <label for="categories-menu">
+                <img src="./images/menu-icon.svg" />
+              </label>
+            </div>
+            <!--End .toggle-bar-->
+            <input type="checkbox" id="main-menu" hidden />
+            <ul class="menu">
+              <div>
+                <span>Menu</span>
+                <label for="main-menu" class="close-btn">&times;</label>
+              </div>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Category</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Elements</a></li>
+            </ul>
+            <label for="main-menu" class="menu-overlay"></label>
+            <!--End .menu-->
+            <div class="phone">
+              <img src="./images/phone-icon.svg" />
+              <span>+123 ( 456 ) ( 7890 )</span>
+            </div>
+            <div class="search-menu-mobile">
+              <div class="search-icon-mobile">
+                <label for="search-modal"
+                  ><img src="./images/search-icon-black.svg"
+                /></label>
+              </div>
+              <label for="main-menu" class="main-menu-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+          </div>
+          <!--End .navigation-row-->
+        </div>
+        <!--End .navigation-->
+      </nav>
+      <div class="inner">
+        <div class="container">
+          <div class="inner-row">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.png" alt="" />
+              </a>
+            </div>
+            <!--End .logo-->
+            <input type="checkbox" hidden id="search-modal" />
+            <div class="search-modal">
+              <label for="search-modal" class="close-btn"> &times; </label>
+              <form class="search">
+                <input type="text" placeholder="Search For items..." />
+                <select>
+                  <option value="">All Categories</option>
+                </select>
+                <button>
+                  <img src="./images/search-icon.svg" />
+                </button>
+              </form>
+            </div>
+            <label for="search-modal" class="search-overlay"></label>
+            <!--End .search-->
+            <ul class="quick-link">
+              <li>
+                <a href="#">
+                  <img src="./images/account-icon.svg" />
+                  <span>Account</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/wishlist-icon.svg" />
+                  <span>Wishlist</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/cart-icon.png" />
+                  <span>Cart</span>
+                </a>
+              </li>
+            </ul>
+            <!--End .quick-link-->
+          </div>
+        </div>
+      </div>
+      <!--End .inner-->
+      <input type="checkbox" id="categories-menu" hidden />
+      <nav class="categories-menu">
+        <div class="menu-heading">
+          <span>Categories</span>
+          <label for="categories-menu" class="close-btn">&times;</label>
+        </div>
+        <ul>
+          <li><a href="#">Category 1</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>
+          <li><a href="#">Category 4</a></li>
+        </ul>
+      </nav>
+
+      <!--End .categories-menu-->
+    </header>
+    <!--End header-->
+  </body>
+</html>
