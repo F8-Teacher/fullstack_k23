@@ -1,0 +1,14 @@
+.circle {
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  border: 10px solid gray;
+  border-top-color: goldenrod;
+  border-radius: 50%;
+  animation: circle 1s infinite linear;
+}
+@keyframes circle {
+  100% {
+    rotate: 360deg;
+  }
+}

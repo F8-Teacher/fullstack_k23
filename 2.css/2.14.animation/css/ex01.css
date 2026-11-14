@@ -1,0 +1,73 @@
+.box {
+  width: 400px;
+  height: 400px;
+  border: 5px solid red;
+  margin: 30px auto;
+  position: relative;
+
+  /* animation: border-color 2s linear infinite; */
+}
+.box span {
+  width: 50px;
+  height: 50px;
+  background: green;
+  display: block;
+  position: absolute;
+  animation-name: moving;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  top: 0;
+  left: 0;
+}
+
+.box:nth-child(2) span {
+  animation-delay: 0.5s;
+}
+
+@keyframes moving {
+  /* from,
+  to {
+    top: 0;
+    left: 0;
+  } */
+  /* 12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    scale: 1.5;
+  } */
+  25% {
+    top: 0;
+    left: 100%;
+    translate: -100%;
+  }
+
+  50% {
+    left: 100%;
+    top: 100%;
+    translate: -100% -100%;
+  }
+
+  75% {
+    left: 0;
+    top: 100%;
+    translate: 0 -100%;
+  }
+}
+
+@keyframes border-color {
+  from,
+  to {
+    border-top-color: blueviolet;
+  }
+  25% {
+    border-right-color: blueviolet;
+  }
+  50% {
+    border-bottom-color: blueviolet;
+  }
+  75% {
+    border-left-color: blueviolet;
+  }
+}
