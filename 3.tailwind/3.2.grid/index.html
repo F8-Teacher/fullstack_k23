@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @keyframes change-color {
+        from {
+          background: green;
+        }
+        to {
+          background: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="mx-auto py-5 max-w-300">
+      <!-- <h2 class="mb-3 font-semibold text-3xl text-center">Sản phẩm nổi bật</h2>
+      <div class="gap-5 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="bg-yellow-400 h-[200px]">Cột 1</div>
+        <div class="bg-yellow-400 h-[200px]">Cột 2</div>
+        <div class="bg-yellow-400 h-[200px]">Cột 3</div>
+        <div class="bg-yellow-400">Cột 4</div>
+        <div class="col-span-2 bg-yellow-400 h-[200px]">Cột 5</div>
+        <div class="bg-yellow-400 h-[200px]">Cột 6</div>
+        <div class="bg-yellow-400 h-[200px]">Cột 7</div>
+        <div class="bg-yellow-400 h-[200px]">Cột 8</div>
+      </div> -->
+      <button
+        class="block before:top-0 before:right-full hover:before:right-0 before:bottom-0 before:left-0 before:absolute relative bg-green-600 before:bg-red-600 mx-auto my-3 px-5 py-2 rounded-full overflow-hidden text-white before:content-[''] before:transition-[right] animate-[change-color_1s_linear_infinite] before:duration-300 ease-[linear] cursor-pointer"
+      >
+        <span class="relative">
+          <i
+            class="animate-[spin_0.5s_linear_infinite] fa-solid fa-spinner"
+          ></i>
+          Click me</span
+        >
+      </button>
+    </section>
+  </body>
+</html>

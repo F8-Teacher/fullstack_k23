@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="bg-gray-200 py-3">
+      <div
+        class="flex justify-between items-center mx-auto px-3 xl:px-0 max-w-300"
+      >
+        <a href="#">
+          <img
+            src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+            alt=""
+            class="h-[50px]"
+          />
+        </a>
+        <nav class="flex items-center gap-6">
+          <input type="checkbox" hidden id="menu" class="peer" />
+          <ul
+            class="[&>li>a]:block top-0 bottom-0 left-0 z-999 md:static fixed md:flex items-center gap-6 bg-[#333] md:bg-transparent p-5 md:p-0 [&>li>a]:py-3 md:[&>li>a]:py-0 w-[250px] md:w-auto text-white [&>li>a]:hover:text-red-600 md:text-[initial] -translate-x-full md:translate-x-0 peer-checked:translate-x-0"
+          >
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+          </ul>
+          <label
+            for="menu"
+            class="hidden peer-checked:block z-990 peer-checked:fixed inset-0 bg-black opacity-70"
+          ></label>
+          <div>
+            <span class="hidden sm:inline-block">
+              <i class="cursor-pointer fa-solid fa-magnifying-glass"></i>
+            </span>
+            <label for="menu" class="md:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

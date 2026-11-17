@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@utility box {
+  @apply border-5 border-red-600;
+}
