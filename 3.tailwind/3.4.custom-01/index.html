@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-abc: blueviolet;
+        --font-sans: "Open Sans", sans-serif;
+        --font-agrave: "Agrave Pro", cursive;
+        --text-heading1: 3.5rem;
+        --text-heading2: 3rem;
+        --text-heading3: 2.5rem;
+        --padding: 10px 20px 30px;
+      }
+      /* .box {
+        @apply border border-red-600 p-(--padding);
+      }
+      @utility box2 {
+        @apply bg-yellow-600 text-red-600;
+      } */
+      @utility box-* {
+        font-size: --value(--text-*);
+        border: 1px solid red;
+        padding: --value(--text-*);
+      }
+      @utility box {
+        @apply p-3 border border-red-600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 class="bg-abc text-heading1">Hello anh em</h1>
+    <h2 class="text-heading2">Hello anh em</h2>
+    <h2 class="text-heading3">Hello anh em</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius beatae
+      asperiores, totam ipsam omnis consequatur, ad velit quia provident dolor
+      vel qui aspernatur aperiam suscipit? Eveniet error expedita dicta
+      cupiditate?
+    </p> -->
+    <!-- <div class="box hover:box2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+      reprehenderit voluptatum possimus, porro tenetur expedita eum fuga enim
+      minus nihil, sunt doloribus soluta unde. Animi quas magni dolore fugit
+      adipisci.
+    </div>
+    <div class="box active:box2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+      reprehenderit voluptatum possimus, porro tenetur expedita eum fuga enim
+      minus nihil, sunt doloribus soluta unde. Animi quas magni dolore fugit
+      adipisci.
+    </div> -->
+    <div class="box-4xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sint
+      repellendus nulla quasi aliquam, labore officia! Quis totam modi iure
+      molestiae ullam eligendi repellat sed neque eveniet! Cum, corporis! Enim.
+    </div>
+  </body>
+</html>

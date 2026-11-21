@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @custom-variant dark (&:where(.dark, .dark *));
+      @theme {
+        --color-dark: #333;
+      }
+      .container {
+        @apply mx-auto max-w-300;
+      }
+    </style>
+  </head>
+  <body class="dark:bg-dark">
+    <header
+      class="bg-gray-100 dark:bg-dark py-5 dark:border-[#444] dark:border-b dark:text-white"
+    >
+      <div class="container">
+        <div class="flex items-center">
+          <span class="font-semibold text-3xl">LOGO</span>
+          <nav class="flex items-center gap-10 ml-auto">
+            <ul class="flex items-center gap-10">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+              <li><a href="#">Item 4</a></li>
+            </ul>
+            <button
+              class="px-2 py-1 border border-gray-300 rounded-md cursor-pointer js-theme-btn"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-5 text-3xl text-center">Sản phẩm nổi bật</h2>
+        <div class="gap-5 grid grid-cols-4">
+          <div class="p-3 border border-gray-200 rounded-lg">
+            <a href="#">
+              <img
+                src="https://img.tgdd.vn/imgt/ecom/f_webp,fit_outside,quality_100,s_448x448/https://cdn.tgdd.vn/Products/Images/42/362760/realme-c85-tim-thumb.jpg"
+                alt=""
+              />
+              <h3 class="py-3 font-semibold text-xl">
+                <a href="#">Iphone 123</a>
+              </h3>
+              <p class="font-semibold text-red-600">12.000.000 đ</p>
+            </a>
+          </div>
+          <div class="p-3 border border-gray-200 rounded-lg">
+            <a href="#">
+              <img
+                src="https://img.tgdd.vn/imgt/ecom/f_webp,fit_outside,quality_100,s_448x448/https://cdn.tgdd.vn/Products/Images/42/362760/realme-c85-tim-thumb.jpg"
+                alt=""
+              />
+              <h3 class="py-3 font-semibold text-xl">
+                <a href="#">Iphone 123</a>
+              </h3>
+              <p class="font-semibold text-red-600">12.000.000 đ</p>
+            </a>
+          </div>
+          <div class="p-3 border border-gray-200 rounded-lg">
+            <a href="#">
+              <img
+                src="https://img.tgdd.vn/imgt/ecom/f_webp,fit_outside,quality_100,s_448x448/https://cdn.tgdd.vn/Products/Images/42/362760/realme-c85-tim-thumb.jpg"
+                alt=""
+              />
+              <h3 class="py-3 font-semibold text-xl">
+                <a href="#">Iphone 123</a>
+              </h3>
+              <p class="font-semibold text-red-600">12.000.000 đ</p>
+            </a>
+          </div>
+          <div class="p-3 border border-gray-200 rounded-lg">
+            <a href="#">
+              <img
+                src="https://img.tgdd.vn/imgt/ecom/f_webp,fit_outside,quality_100,s_448x448/https://cdn.tgdd.vn/Products/Images/42/362760/realme-c85-tim-thumb.jpg"
+                alt=""
+              />
+              <h3 class="py-3 font-semibold text-xl">
+                <a href="#">Iphone 123</a>
+              </h3>
+              <p class="font-semibold text-red-600">12.000.000 đ</p>
+            </a>
+          </div>
+          <div class="p-3 border border-gray-200 rounded-lg">
+            <a href="#">
+              <img
+                src="https://img.tgdd.vn/imgt/ecom/f_webp,fit_outside,quality_100,s_448x448/https://cdn.tgdd.vn/Products/Images/42/362760/realme-c85-tim-thumb.jpg"
+                alt=""
+              />
+              <h3 class="py-3 font-semibold text-xl">
+                <a href="#">Iphone 123</a>
+              </h3>
+              <p class="font-semibold text-red-600">12.000.000 đ</p>
+            </a>
+          </div>
+          <div class="p-3 border border-gray-200 rounded-lg">
+            <a href="#">
+              <img
+                src="https://img.tgdd.vn/imgt/ecom/f_webp,fit_outside,quality_100,s_448x448/https://cdn.tgdd.vn/Products/Images/42/362760/realme-c85-tim-thumb.jpg"
+                alt=""
+              />
+              <h3 class="py-3 font-semibold text-xl">
+                <a href="#">Iphone 123</a>
+              </h3>
+              <p class="font-semibold text-red-600">12.000.000 đ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const themeBtn = document.querySelector(".js-theme-btn");
+      const html = document.querySelector("html");
+      const iconEl = themeBtn.querySelector("i");
+      themeBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+
+        if (html.classList.contains("dark")) {
+          iconEl.classList.remove("fa-moon");
+          iconEl.classList.add("fa-sun");
+        } else {
+          iconEl.classList.add("fa-moon");
+          iconEl.classList.remove("fa-sun");
+        }
+      });
+    </script>
+  </body>
+</html>
