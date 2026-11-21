@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+:root {
+  --heading2: #333;
+  --bg: white;
+  --border: var(--color-gray-200);
+  --price: var(--color-red-600);
+}
+.dark {
+  --heading2: #fff;
+  --bg: #333;
+  --border: #444;
+  --price: var(--color-red-300);
+}
+@theme {
+  --color-dark: #333;
+  --color-heading2: var(--heading2);
+  --color-bg: var(--bg);
+  --color-border: var(--border);
+  --color-price: var(--price);
+}
+
+.container {
+  @apply mx-auto max-w-300;
+}
